@@ -248,7 +248,7 @@ Bean定义已被移除(myBean)
 1. **什么是 `BeanDefinitionRegistry`？**
    - `BeanDefinitionRegistry` 是Spring框架中的一个接口，它用于注册和管理Bean定义。它是IOC容器的核心组成部分，用于将应用程序中的Bean定义注册到容器中，以便后续实例化和管理。
 2. **`BeanDefinitionRegistry` 与 `DefaultListableBeanFactory` 之间的关系是什么？**
-   - `DefaultListableBeanFactory` 是Spring的IOC容器，而 `BeanDefinitionRegistry` 是 `DefaultListableBeanFactory` 的一个具体实现。它允许 `DefaultListableBeanFactory` 在内部管理和访问Bean定义。 `DefaultListableBeanFactory` 实际上是一个包含了 `BeanDefinitionRegistry` 功能的IOC容器。
+   - `DefaultListableBeanFactory` 是Spring的IOC容器，而 `DefaultListableBeanFactory` 是 `BeanDefinitionRegistry` 的一个具体实现。它允许 `DefaultListableBeanFactory` 在内部管理和访问Bean定义。 `DefaultListableBeanFactory` 实际上是一个包含了 `BeanDefinitionRegistry` 功能的IOC容器。
 3. **`BeanDefinition` 和 `BeanDefinitionRegistry` 之间的关系是什么？**
    - `BeanDefinition` 是Bean定义的元数据，它描述了如何创建和配置Bean。 `BeanDefinitionRegistry` 用于注册和管理这些 `BeanDefinition`。 `BeanDefinitionRegistry` 允许我们注册Bean定义并在容器中实例化这些Bean。
 4. **如何使用 `BeanDefinitionRegistry` 注册Bean定义？**
